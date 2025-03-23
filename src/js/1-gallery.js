@@ -3,18 +3,18 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
-    preview: '/img/1.png',
-    original: '/img/large1.jpg',
+    preview: '/src/img/1-1.png',
+    original: '/src/img/large1-1.jpg',
     description: 'Image description',
   },
   {
-    preview: './img/2.png',
-    original: './img/large2.jpg',
+    preview: '/img/2.png',
+    original: '/img/large2.jpg',
     description: 'Image description',
   },
   {
-    preview: './img/3.png',
-    original: './img/large3.jpg',
+    preview: './src/img/3.png',
+    original: './src/img/large3.jpg',
     description: 'Image description',
   },
   {
