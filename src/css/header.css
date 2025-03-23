@@ -1,44 +1,55 @@
-.header {
-  padding: 20px 0;
+form {
+  padding: 24px;
+  gap: 8px;
+  margin: 0;
 }
-.nav {
+.feedback-form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 360px;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+input {
+  height: 40px;
+  width: 360px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
+input:hover {
+  border-color: #000000;
   border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
 }
-.nav-link.active::after {
-  background: #747bff;
+.text {
+  height: 80px;
+  width: 360px;
+}
+button {
+  background: #4e75ff;
+  color: white;
+  border: none;
+  width: 95;
+  height: 40;
+  gap: 10px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+button:hover {
+  background: #6c8cff;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: #2e2f42;
+  padding-bottom: 8px;
+  margin: 0;
 }

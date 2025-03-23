@@ -1,34 +1,18 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
-  margin: 0;
+  list-style-type: none;
   padding: 0;
-  list-style: none;
+  margin: 0;
+}
+.gallery-image {
+  margin-right: 24px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 360px;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
