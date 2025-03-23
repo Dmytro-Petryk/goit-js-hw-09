@@ -1,50 +1,52 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const basePath = import.meta.env.BASE_URL;
+
 const images = [
   {
-    preview: '/src/img/1-1.png',
-    original: '/src/img/large1-1.jpg',
+    preview: `${basePath}img/1.png`,
+    original: `${basePath}img/large1.jpg`,
     description: 'Image description',
   },
   {
-    preview: '/img/2.png',
-    original: '/img/large2.jpg',
+    preview: `${basePath}img/2.png`,
+    original: `${basePath}img/large2.jpg`,
     description: 'Image description',
   },
   {
-    preview: './src/img/3.png',
-    original: './src/img/large3.jpg',
+    preview: `${basePath}img/3.png`,
+    original: `${basePath}img/large3.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/1-1.png',
-    original: './img/large1-1.jpg',
+    preview: `${basePath}img/1-1.png`,
+    original: `${basePath}/img/large1-1.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/2-1.png',
-    original: './img/large2-1.jpg',
+    preview: `${basePath}img/2-1.png`,
+    original: `${basePath}img/large2-1.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/3-1.png',
-    original: './img/large3-1.jpg',
+    preview: `${basePath}img/3-1.png`,
+    original: `${basePath}img/large3-1.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/1-2.png',
-    original: './img/large1-2.jpg',
+    preview: `${basePath}img/1-2.png`,
+    original: `${basePath}img/large1-2.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/2-2.png',
-    original: './img/large2-2.jpg',
+    preview: `${basePath}img/2-2.png`,
+    original: `${basePath}img/large2-2.jpg`,
     description: 'Image description',
   },
   {
-    preview: './img/3-2.png',
-    original: './img/large3-2.jpg',
+    preview: `${basePath}img/3-2.png`,
+    original: `${basePath}img/large3-2.jpg`,
     description: 'Image description',
   },
 ];
