@@ -67,16 +67,11 @@ galleryContainer.innerHTML = images
 
 galleryContainer.classList.add('gallery-styled');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    captionDelay: 250,
-    enableKeyboard: true,
-    overlayOpacity: 0.8,
-  });
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
-  lightbox.on('shown.simplelightbox', () => {
-    document.querySelector('.sl-overlay').style.backgroundColor = '#2E2F42';
-  });
+lightbox.on('shown.simplelightbox', () => {
+  document.querySelector('.sl-overlay').style.backgroundColor = '#2E2F42';
 });
